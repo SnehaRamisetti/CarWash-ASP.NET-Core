@@ -1,0 +1,55 @@
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <form   (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input [disabled]="true" type="text" class="form-control form-control-lg" id="firstName"
+                        [(ngModel)]="user.firstName" name="firstName">
+                    </div>
+                    <!-- <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control form-control-lg" id="lastName"
+                        [(ngModel)]="user.lastName" name="lastName">
+                    </div> -->
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input [disabled]="true"  type="text" class="form-control form-control-lg" id="email"
+                        [(ngModel)]="user.email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input  [disabled]="true" type="text" [type]="type"   class="form-control form-control-lg" id="password"
+                        [(ngModel)]="user.password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <label>phoneNumber</label>
+                        <input  [disabled]="true"  type="text" class="form-control form-control-lg" id="phoneNumber"
+                        [(ngModel)]="user.phoneNumber" name="phoneNumber">
+                    </div>
+                    <div class="form-group">
+                        <label>Role</label>
+                        <input [disabled]="true" type="text" class="form-control form-control-lg" id="role"
+                        [(ngModel)]="user.role" name="role">
+                    </div>
+                    <div class="form-group">
+                        <label>isActive</label>
+                        <input type="text" class="form-control form-control-lg" id="isActive"
+                        [(ngModel)]="user.isActive" name="isActive">
+                    </div>
+                         
+                    
+        <div class="text-center text-lg-start mt-4 pt-2">
+                        <button   type="submit" class="btn btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;"  >
+                            Edit</button>
+
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

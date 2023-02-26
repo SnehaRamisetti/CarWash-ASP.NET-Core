@@ -1,0 +1,70 @@
+
+
+     <html>
+    <head>
+       <title>Car Wash Booking System</title>
+    </head>
+    <body>
+       <div class="banner">
+          <div class="content">
+             <div class="container">
+            <div class="login-form">
+                <h1>User Login</h1>
+                    
+                       <form [formGroup]="loginForm"  >
+                          <div>
+                            <p>User Email</p>
+                                <div class="input-field" [class.error]="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">
+                                    <input  formControlName="email" type="text" placeholder="Email" required>
+                                 </div>
+                           
+                           <small *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')" class="text-danger">
+                                 *Email is Required</small>
+                                 <p>Password</p>
+                    <div class="input-field" [class.error]="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">
+                         
+                        <input formControlName="password" [type]="type" class="password" placeholder="Password" required>
+                         
+                     </div>
+                    <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')" class="text-danger">*Password is Required</small>
+                    <p>Role</p>
+                    <div class="input-field" [class.error]="loginForm.controls['role'].dirty && loginForm.hasError('required','role')">
+                               
+                                
+                       <input  formControlName="role" type="text" placeholder="Role" required>
+                 
+                </div>
+            </div>
+            <small *ngIf="loginForm.controls['role'].dirty && loginForm.hasError('required','role')" class="text-danger">
+                *Role is Required</small>
+                     
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+                        
+                        <a href="#" class="text">Forgot password?</a>
+                    
+                     
+                    <button  [disabled]="loginForm.invalid" (click)="onLogin()" type="submit"  >Login</button>
+                     
+                    <div class="login-signup">
+                        <span class="text">Not a member?
+                            <a href="signup" class="text signup-link">Signup Now</a>
+                        </span>
+                    </div>
+                </form>
+                
+            </div>
+            
+   
+                </div>
+                 
+             </div>
+          
+       
+       </div>
+    
+        
+    </body>
+</html> 

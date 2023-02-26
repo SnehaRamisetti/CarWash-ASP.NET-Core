@@ -1,0 +1,40 @@
+<br>
+<h2 style="text-align: center;">Welcome Admin :)</h2>
+<h3>User Details</h3>
+<!-- <button  style="margin: 50px; padding: 10px;" type="button" class="btn btn-primary" routerLink="/addpackage" style="background-color:rgb(123, 152, 232);">Add Package</button> -->
+<div class="space"></div>
+<!-- <button  style="margin: 50px; padding: 10px;" type="button" class="btn btn-primary" routerLink="/editpackage" style="background-color:rgb(123, 152, 232);">Edit Package</button> -->
+<!-- <div *ngIf="!products" class="loader"></div> -->
+<table data-page-length='5' class="table table-striped" aria-labelledby="tabelLabel">
+    <thead>
+        <tr>
+             
+            
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>PH Number</th>
+            <th>Role</th>
+            <th>Status</th>
+            
+             
+        </tr>
+    </thead>
+    <tbody>
+        <tr    routerLink="/edituser" *ngFor="let user of users">
+             
+            
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phoneNumber}}</td>
+            <td>{{user.role}}</td>
+            
+            <td>{{user.isActive}}</td>
+             
+            <td><button (click)="edit(user.id)"  style="border:none" class="fa fa-edit"></button></td>
+            <td><button (click)="delete(user.id)" style="border:none" class="fa fa-trash"></button></td>
+        </tr>
+    </tbody>
+</table>
+<button class="btn" (click)="onLogout()">Log Out</button>

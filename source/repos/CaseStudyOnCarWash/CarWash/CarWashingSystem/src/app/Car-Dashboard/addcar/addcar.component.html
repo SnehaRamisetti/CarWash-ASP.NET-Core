@@ -1,0 +1,42 @@
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <form    [formGroup]="carForm">
+
+                    <div class="form-group" [class.error]="carForm.controls['modelName'].dirty && carForm.hasError('required','modelName')">
+			   
+                        <input class="form-control form-control-lg" formControlName="modelName" type="text" placeholder="Model Name" required>
+                   </div>
+            
+            <small *ngIf="carForm.controls['modelName'].dirty && carForm.hasError('required','modelName')" class="text-danger">
+                *Name is Required</small>
+                <label class="form-label" for="form3Example3"></label>
+
+           
+        <div class="form-group" [class.error]="carForm.controls['status'].dirty && carForm.hasError('required','status')">
+			   
+            <input class="form-control form-control-lg" formControlName="status" type="text" placeholder="Status" required>
+       </div>
+
+<small *ngIf="carForm.controls['status'].dirty && carForm.hasError('required','status')" class="text-danger">
+    *Status is Required</small>
+    <label class="form-label" for="form3Example3"></label>
+                     
+     
+                    
+
+
+
+                    <div class="text-center text-lg-start mt-4 pt-2">
+                        <button  (click)="AddCar()" type="submit" class="btn btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;"  >Add</button>
+
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

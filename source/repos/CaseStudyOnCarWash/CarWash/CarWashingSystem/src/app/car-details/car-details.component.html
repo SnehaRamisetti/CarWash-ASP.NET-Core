@@ -1,0 +1,39 @@
+
+<div class="outer">
+   <div class="banner">
+   <div class="container">
+   <h1>CAR DETAILS DASHBOARD</h1>
+   <div class="card-container">
+      <div class="card-form">
+         <form #form="ngForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+               <label for="">Car Model Name</label>
+               <input type="text" name="carmodel" [(ngModel)]="car.modelName">
+            </div>
+            <div class="form-group">
+               <label for="">Status</label>
+               <input type="text" name="carstatus" [(ngModel)]="car.status">
+            </div>
+            <div class="form-group">
+               <a (click)="onSubmit()">
+               <button>Save</button>
+            </a>
+            </div>
+         </form>
+      </div>
+      <div class="cards-grid">
+         <div (click)="populateForm(car)" class="card-row" *ngFor="let car of cars">
+            <div class="card-row-details">
+               <span>{{car.modelName}}</span>
+               <span>  </span>
+               <span>{{car.status}}</span>
+
+         </div>
+         <div class="card-row-action">
+            <a (click)="deleteCar(car.carId)"><i class="fa-solid fa-trash-can"></i></a>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+</div>

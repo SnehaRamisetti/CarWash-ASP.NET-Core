@@ -1,0 +1,36 @@
+<br>
+<h2 style="text-align: center;">Welcome Admin :)</h2>
+<h3>Car Details</h3>
+<button  style="margin: 50px; padding: 10px;" type="button" class="btn btn-primary" routerLink="/addcar" style="background-color:rgb(123, 152, 232);">Add Car</button>
+<div class="space"></div>
+<!-- <button  style="margin: 50px; padding: 10px;" type="button" class="btn btn-primary" routerLink="/editpackage" style="background-color:rgb(123, 152, 232);">Edit Package</button> -->
+<!-- <div *ngIf="!products" class="loader"></div> -->
+<table data-page-length='5' class="table table-striped" aria-labelledby="tabelLabel">
+    <thead>
+        <tr>
+             
+            
+            <th> Model Name</th>
+             
+            <th> Status</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            
+             
+        </tr>
+    </thead>
+    <tbody>
+        <tr  *ngFor="let car of cars">
+             
+            
+            <td>{{car.modelName}}</td>
+             
+            
+            <td>{{car.status}}</td>
+             
+            <td><button (click)="edit(car.carId)"  style="border:none" class="fa fa-edit"></button></td>
+            <td><button (click)="delete(car.carId)" style="border:none" class="fa fa-trash"></button></td>
+        </tr>
+    </tbody>
+</table>
+<button class="btn" (click)="onLogout()">Log Out</button>

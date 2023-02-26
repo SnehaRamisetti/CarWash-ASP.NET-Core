@@ -1,0 +1,59 @@
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <form    [formGroup]="packageForm">
+
+                    <div class="form-group" [class.error]="packageForm.controls['name'].dirty && packageForm.hasError('required','name')">
+			   
+                        <input class="form-control form-control-lg" formControlName="name" type="text" placeholder="Name" required>
+                   </div>
+            
+            <small *ngIf="packageForm.controls['name'].dirty && packageForm.hasError('required','name')" class="text-danger">
+                *Name is Required</small>
+                <label class="form-label" for="form3Example3"></label>
+
+                
+                <div class="form-group" [class.error]="packageForm.controls['description'].dirty && packageForm.hasError('required','description')">
+			   
+                    <input class="form-control form-control-lg" formControlName="description" type="text" placeholder="Description" required>
+               </div>
+        
+        <small *ngIf="packageForm.controls['description'].dirty && packageForm.hasError('required','description')" class="text-danger">
+            *Description is Required</small>
+            <label class="form-label" for="form3Example3"></label>
+            <div class="form-group" [class.error]="packageForm.controls['price'].dirty && packageForm.hasError('required','price')">
+			   
+                <input class="form-control form-control-lg" formControlName="price" type="text" placeholder="Price" required>
+           </div>
+    
+    <small *ngIf="packageForm.controls['price'].dirty && packageForm.hasError('required','price')" class="text-danger">
+        *Price is Required</small>
+        <label class="form-label" for="form3Example3"></label>
+        <div class="form-group" [class.error]="packageForm.controls['status'].dirty && packageForm.hasError('required','status')">
+			   
+            <input class="form-control form-control-lg" formControlName="status" type="text" placeholder="Status" required>
+       </div>
+
+<small *ngIf="packageForm.controls['status'].dirty && packageForm.hasError('required','status')" class="text-danger">
+    *Status is Required</small>
+    <label class="form-label" for="form3Example3"></label>
+                     
+     
+                    
+
+
+
+                    <div class="text-center text-lg-start mt-4 pt-2">
+                        <button  (click)="AddPackage()" type="submit" class="btn btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;"  >Add</button>
+
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+

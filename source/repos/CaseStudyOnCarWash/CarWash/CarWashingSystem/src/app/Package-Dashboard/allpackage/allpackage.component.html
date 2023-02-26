@@ -1,0 +1,38 @@
+<br>
+<h2 style="text-align: center;">Welcome Admin :)</h2>
+<h3>Package Details</h3>
+<button  style="margin: 50px; padding: 10px;" type="button" class="btn btn-primary" routerLink="/addpackage" style="background-color:rgb(123, 152, 232);">Add Package</button>
+<div class="space"></div>
+<!-- <button  style="margin: 50px; padding: 10px;" type="button" class="btn btn-primary" routerLink="/editpackage" style="background-color:rgb(123, 152, 232);">Edit Package</button> -->
+<!-- <div *ngIf="!products" class="loader"></div> -->
+<table data-page-length='5' class="table table-striped" aria-labelledby="tabelLabel">
+    <thead>
+        <tr>
+             
+            
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th> Status</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            
+             
+        </tr>
+    </thead>
+    <tbody>
+        <tr     *ngFor="let package of packages">
+             
+            
+            <td>{{package.name}}</td>
+            <td>{{package.description}}</td>
+            <td>{{package.price}}</td>
+            
+            <td>{{package.status}}</td>
+             
+            <td><button (click)="edit(package.id)"  style="border:none" class="fa fa-edit"></button></td>
+            <td><button (click)="delete(package.id)" style="border:none" class="fa fa-trash"></button></td>
+        </tr>
+    </tbody>
+</table>
+<button class="btn" (click)="onLogout()">Log Out</button>

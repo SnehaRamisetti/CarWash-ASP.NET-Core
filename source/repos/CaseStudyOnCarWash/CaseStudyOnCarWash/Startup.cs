@@ -38,6 +38,7 @@ namespace CaseStudyOnCarWash
             services.AddTransient<ICar, CarRepo>();
             services.AddTransient<IAdmin, AdminRepo>();
             services.AddTransient<IPackage, PackageRepo>();
+            services.AddTransient<IOrder,OrdersRepo>();
 
 
             services.AddControllers();

@@ -140,9 +140,10 @@ namespace CaseStudyOnCarWash.Controllers
 
             return Ok(new
             {
+                userObj.Role,
                 Token,
                 Message = "User Login successful!"
-            }); ;
+            }) ; ;
         }
         #endregion
         //Creating method for jwt token

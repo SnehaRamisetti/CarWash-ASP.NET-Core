@@ -16,6 +16,9 @@ namespace CaseStudyOnCarWash.Models
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Car> Cars { get; set; }
         public DbSet<PackageDetails> PackageDetails{ get; set; }
+         
+        public DbSet<Orderdetails> Orderdetails { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<User>()

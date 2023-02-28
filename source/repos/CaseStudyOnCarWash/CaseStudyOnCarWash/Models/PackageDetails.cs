@@ -18,6 +18,8 @@ namespace CaseStudyOnCarWash.Models
         public decimal price { get; set; }
         [Required]
         public string status { get; set; }
+
+
         
     }
 }

@@ -11,7 +11,7 @@
             <div class="login-form">
                 <h1>User Login</h1>
                     
-                       <form [formGroup]="loginForm"  >
+                       <form [formGroup]="loginForm" (ngSubmit)="onLogin()" >
                           <div>
                             <p>User Email</p>
                                 <div class="input-field" [class.error]="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">
@@ -31,7 +31,7 @@
                     <div class="input-field" [class.error]="loginForm.controls['role'].dirty && loginForm.hasError('required','role')">
                                
                                 
-                       <input  formControlName="role" type="text" placeholder="Role" required>
+                       <input  formControlName="role"  name="role" type="text" placeholder="Role" required>
                  
                 </div>
             </div>
@@ -46,7 +46,7 @@
                         <a href="#" class="text">Forgot password?</a>
                     
                      
-                    <button  [disabled]="loginForm.invalid" (click)="onLogin()" type="submit"  >Login</button>
+                    <button  [disabled]="loginForm.invalid" (click)="onLogin( )" type="submit"  >Login</button>
                      
                     <div class="login-signup">
                         <span class="text">Not a member?

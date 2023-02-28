@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ApiService } from '../services/api.service';
 import { AuthService } from '../services/auth.service';
 
 @Component({
-  selector: 'app-package-details',
-  templateUrl: './package-details.component.html',
-  styleUrls: ['./package-details.component.css']
+  selector: 'app-usersorders',
+  templateUrl: './usersorders.component.html',
+  styleUrls: ['./usersorders.component.css']
 })
-export class PackageDetailsComponent   {
-  public packages!:any[];
+export class UsersordersComponent {
+  public orders!:any[];
    
   /**
    *
@@ -21,21 +21,14 @@ export class PackageDetailsComponent   {
   }
  
  refreshList(){
-      this.api.getPackages().subscribe(data=>{
-        this.packages=data;
-        console.log(this.packages)
+      this.api.getOrders().subscribe(data=>{
+        this.orders=data;
+        console.log(this.orders)
       });
  
- }
- Select(id:number)
- {
-   this.router.navigate(['order',id]);
  }
  onLogout() {
   localStorage.clear();
   this.router.navigate(['/home']);
  }
- 
-   
- 
 }

@@ -1,0 +1,50 @@
+<br>
+<h2 style="text-align: center;">Welcome Washer :)</h2>
+<h3>Customer Orders</h3>
+ 
+<div class="space"></div>
+<!-- <button  style="margin: 50px; padding: 10px;" type="button" class="btn btn-primary" routerLink="/editpackage" style="background-color:rgb(123, 152, 232);">Edit Package</button> -->
+<!-- <div *ngIf="!products" class="loader"></div> -->
+<table data-page-length='5' class="table table-striped" aria-labelledby="tabelLabel">
+    <thead>
+        <tr>
+             
+            
+            <th>WashingInstructions</th>
+            <th>Date</th>
+            <th>Package Name</th>
+            <th>Price</th>
+            <th>City</th>
+            <th>Pincode</th>
+            <th>Status</th>
+            <th>Edit</th>
+
+             
+             
+             
+            
+             
+        </tr>
+    </thead>
+    <tbody>
+        <tr     *ngFor="let  order of  orders">
+             
+            
+            <td>{{order.washingInstructions}}</td>
+            <td>{{order.date}}</td>
+             
+            
+            
+            <td>{{order.packagename}}</td>
+            <td>{{order.price}}</td>
+            <td>{{order.city}}</td>
+            <td>{{order.pincode}}</td>
+            <td>{{order.status}}</td>
+
+            <td><button    style="border:none" class="fa fa-edit"></button></td>
+            
+             
+        </tr>
+    </tbody>
+</table>
+<button class="btn" (click)="onLogout()">Log Out</button>

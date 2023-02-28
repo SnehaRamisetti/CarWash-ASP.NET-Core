@@ -65,4 +65,12 @@ export class ApiService {
   {
     return this.http.get<any>(`${this.baseUrl}User` + '/' +id);
   }
+  getOrders(){
+    return this.http.get<any>(`${this.baseUrl}Order`);
+  }
+   addorder(orderObj:any){
+    return this.http.post<any>(`${this.baseUrl}Order`,orderObj);
+   }
+  
+  
 }

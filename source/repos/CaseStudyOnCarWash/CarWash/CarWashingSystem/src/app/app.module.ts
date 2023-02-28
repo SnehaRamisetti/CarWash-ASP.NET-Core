@@ -22,6 +22,8 @@ import { AddcarComponent } from './Car-Dashboard/addcar/addcar.component';
 import { EditcarComponent } from './Car-Dashboard/editcar/editcar.component';
 import { AllusersComponent } from './User-Dashboard/allusers/allusers.component';
 import { EdituserComponent } from './User-Dashboard/edituser/edituser.component';
+import { UsersordersComponent } from './usersorders/usersorders.component';
+import { OrderComponent } from './order/order.component';
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import { EdituserComponent } from './User-Dashboard/edituser/edituser.component'
     AddcarComponent,
     EditcarComponent,
     AllusersComponent,
-    EdituserComponent
+    EdituserComponent,
+    UsersordersComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,

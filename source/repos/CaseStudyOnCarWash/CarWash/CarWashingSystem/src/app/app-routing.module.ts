@@ -8,6 +8,7 @@ import { CarDetailsComponent } from './car-details/car-details.component';
 import { AuthGuard } from './Guards/auth.guard';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { OrderComponent } from './order/order.component';
 import { AddpackageComponent } from './Package-Dashboard/addpackage/addpackage.component';
 import { AllpackageComponent } from './Package-Dashboard/allpackage/allpackage.component';
 import { EditpackageComponent } from './Package-Dashboard/editpackage/editpackage.component';
@@ -16,6 +17,8 @@ import { SignupComponent } from './signup/signup.component';
 import { AllusersComponent } from './User-Dashboard/allusers/allusers.component';
 import { EdituserComponent } from './User-Dashboard/edituser/edituser.component';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { UsersordersComponent } from './usersorders/usersorders.component';
+
  
 
 const routes: Routes = [
@@ -36,7 +39,8 @@ const routes: Routes = [
   {path:'editcar/:id',component:EditcarComponent  ,canActivate:[AuthGuard]},
   {path:'allusers',component: AllusersComponent,canActivate:[AuthGuard]},
   {path:'edituser/:id',component: EdituserComponent,canActivate:[AuthGuard]},
-
+  {path:'usersorders',component:  UsersordersComponent,canActivate:[AuthGuard]},
+  {path:'order/:id',component: OrderComponent,canActivate:[AuthGuard]}
 ];
 
 @NgModule({

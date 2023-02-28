@@ -12,7 +12,8 @@ export class UserLoginComponent {
   type:string="password";
   isText:boolean=false;
   eyeIcon:string="fa-eye-slash";
-  loginForm!:FormGroup;
+  loginForm!:FormGroup ;
+  
   user:any={
     // carId:'',
     email:'',
@@ -24,6 +25,7 @@ export class UserLoginComponent {
 
  }
  ngOnInit():void{
+   
     this.loginForm =this.fb.group({
        
      email:['',Validators.required],
@@ -31,25 +33,27 @@ export class UserLoginComponent {
      role:['',Validators.required]
     })
  }
- onLogin()
+ onLogin( )
  {
    if(this.loginForm.valid){
      console.log(this.loginForm.value)
-     this.auth.UserLogin(this.loginForm.value)
+     this.auth.UserLogin(this.loginForm.value )
+     
      .subscribe({
        next:(res)=>{
          alert(res.message);
           
          this.loginForm.reset();
          this.auth.storetoken(res.token);
-         if(this.loginForm.value.role==='Customer')
+          
+         if( res.role ==='Customer')
          {
          this.router.navigate(['package-details'])
-
          }
          else{
-          this.router.navigate(['car-details'])
+          this.router.navigate(['usersorders'])
          }
+   
        },
        error:(err)=>{
          alert(err.error.message)

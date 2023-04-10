@@ -72,7 +72,8 @@ namespace CaseStudyOnCarWash.Controllers
             var add = await _IOrder.AddOrders(Order);
             return Ok(new
             {
-                Message = " Order placed successfully"
+                Message = " Order placed successfully",
+                Order.Id
             });
 
         }

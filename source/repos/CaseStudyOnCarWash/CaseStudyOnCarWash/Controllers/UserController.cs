@@ -4,13 +4,17 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using MimeKit;
+using MimeKit.Text;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Net.Mail;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using SmtpClient = MailKit.Net.Smtp.SmtpClient;
 
 namespace CaseStudyOnCarWash.Controllers
 {
@@ -169,6 +173,21 @@ namespace CaseStudyOnCarWash.Controllers
             return jwtTokenHandler.WriteToken(token);
         }
         #endregion
+        #region EmailService
+        [HttpGet("EmailService")]
+        public IActionResult SendEmail(string name, string receiver)
+        {
+            string body = "Thanks " + name + "!\n\n Your email id " + receiver + " is succesfully registered with" +
+            " GREENWASH \n\n Regards,\n GREENWASH Ltd.\n Contact us: carwash240130@gmail.com";
+            var email = new MimeMessage(); email.From.Add(MailboxAddress.Parse("carwash240130@gmail.com"));
+            email.To.Add(MailboxAddress.Parse(receiver));
+            email.Subject = "Registration confirmation mail-GREENWASH";
+            email.Body = new TextPart(TextFormat.Plain) { Text = body };
+            using var smtp = new SmtpClient(); smtp.Connect("smtp.gmail.com", 587, MailKit.Security.SecureSocketOptions.StartTls); smtp.Authenticate("carwash240130@gmail.com", "olshcfchzcuoylcw"); //email and password
+            smtp.Send(email);
+            smtp.Disconnect(true); return Ok("200");
+        }
+     # endregion
 
 
 

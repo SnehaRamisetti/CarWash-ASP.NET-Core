@@ -63,7 +63,7 @@
 .form-box
 {
 	width: 380px;
-	height:480px;
+	height:380px;
 	position:relative;
 	 transform: translateY();
 	margin:5% auto;
@@ -120,7 +120,7 @@
 }
 .input-group-login
 {
-	top:150px;
+	top:70px;
 	position:absolute;
 	width: 280px;
 	transition:.5s;

@@ -1,57 +1,105 @@
-<section class="vh-100">
-    <div class="container-fluid h-custom">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-
-            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                <form (ngSubmit)="onSubmit()" >
-                    <div class="form-group">
-                        <label>washingInstructions</label>
-                        <input   type="text" class="form-control form-control-lg" id="washingInstructions"
-                         name="washingInstructions">
-                    </div>
-                    <div class="form-group">
-                        <label>date</label>
-                        <input type="text" class="form-control form-control-lg" id="date"
-                         name="date">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>packagename</label>
-                        <input  [disabled]="true" type="text" type="text"   class="form-control form-control-lg" id="packagename"
-                        [(ngModel)]="package.name"  name="packagename">
-                    </div>
-                    <div class="form-group">
-                        <label>price</label>
-                        <input [disabled]="true" type="text" class="form-control form-control-lg" id="price"
-                        [(ngModel)]="package.price"  name="price">
-                    </div>
-                    <div class="form-group">
-                        <label>City</label>
-                        <input   type="text" class="form-control form-control-lg" id="city"
-                         name="city">
-                    </div>
-                    <div class="form-group">
-                        <label>Pincode</label>
-                        <input   type="text" class="form-control form-control-lg" id="pincode"
-                         name="pincode">
-                    </div>
-                    <div class="form-group">
-                        <label>Status</label>
-                        <input type="text" class="form-control form-control-lg" id="status"
-                        name="status">
-                    </div>
-                         
-                    
-        <div class="text-center text-lg-start mt-4 pt-2">
-                        <button   type="submit" class="btn btn-lg" style="padding-left: 2.5rem; padding-right: 2.5rem;"  >
-                            Order Now</button>
-
-
-
-                    </div>
-                </form>
+<nav class=" navbar navbar-expand bg-dark text-light">
+     
+        <div class="navbar-header nav-item">
+             
+          <span>GREEN WASH</span>
+        </div>
+        <div class="collapse navbar-collapse navbar-right justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav text-light">
+                <a style="margin-right:20px" routerLink="/home">
+                     LogOut </a>
+                <a routerLink="/myorder">
+                    MyOrders</a>
             </div>
         </div>
-    </div>
-</section>
+     
+</nav> 
+<br>
+ 
+<div class="container">
+  <div *ngIf="message" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Order Placed Successfully!</strong>  Thank You for choosing Green Wash
+    <button (click)="removemsg()"type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+    <form action="action_page.php" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Instructions</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="washingInstructions"
+          [(ngModel)]="order.washingInstructions" name="washingInstructions">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Date</label>
+        </div>
+        <div class="col-75">
+          <input type="date"  id="date"
+          [(ngModel)]="order.date" name="date">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Package Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" [disabled]="true" type="text"     id="packagename"
+          [(ngModel)]="package.name"  name="packagename">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Price</label>
+        </div>
+        <div class="col-75">
+          <input type="text" [disabled]="true" type="text"   id="price"
+          [(ngModel)]="package.price"  name="price">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">City</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="city"
+          [(ngModel)]="order.city" name="city">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Pincode</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="pincode"
+          [(ngModel)]="order.pincode" name="pincode">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Status</label>
+        </div>
+        <div class="col-75">
+          <input type="text" [disabled]="true" type="text"  id="status"
+          [(ngModel)]="order.status"  name="status">
+        </div>
+      </div>
+      
+      <br>
+      <br>
+      <div class="text-center text-lg-start mt-4 pt-2">
+        <button type="submit" class="btn btn-lg" >Order Now</button>
+        <button (click)="next()" type="submit" class="btn btn-lg" >Next</button>
+      </div>
+      <!-- <button    id="click" class="submit-btn">
+        <span class="button__text" id="click">Order Now</span>
+     </button>
+     <button (click)="next()"    class="submit-btn" ><span class="button__text"  >Next</span></button> -->
+    </form> 
+    
+ 
+   
+  </div>
+  
  

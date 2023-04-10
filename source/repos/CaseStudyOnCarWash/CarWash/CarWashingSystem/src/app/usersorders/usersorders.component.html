@@ -1,5 +1,25 @@
+<nav class=" navbar navbar-expand bg-dark text-light">
+    <div class="container">
+        <div class="navbar-header nav-item">
+            <!-- <a routerLink="/home"><b>  
+          <span>PACT</span> </b></a> -->
+          <span>GREEN WASH</span> 
+
+        </div>
+        <div class="collapse navbar-collapse navbar-right justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav text-light">
+                <a style="margin-right:20px" routerLink="/home">
+                     LogOut </a>
+                <a routerLink="/home">
+                    Back</a>
+            </div>
+        </div>
+    </div>
+</nav> 
 <br>
-<h2 style="text-align: center;">Welcome Washer :)</h2>
+
+<br>
+<h2 style="text-align: center;">Welcome Washer</h2>
 <h3>Customer Orders</h3>
  
 <div class="space"></div>
@@ -17,7 +37,7 @@
             <th>City</th>
             <th>Pincode</th>
             <th>Status</th>
-            <th>Edit</th>
+             
 
              
              
@@ -41,10 +61,10 @@
             <td>{{order.pincode}}</td>
             <td>{{order.status}}</td>
 
-            <td><button    style="border:none" class="fa fa-edit"></button></td>
+            <td><button   (click)="Accept(order.id)" class="btn btn-primary btn-block " >Accept</button></td>
             
              
         </tr>
     </tbody>
 </table>
-<button class="btn" (click)="onLogout()">Log Out</button>
+ 

@@ -1,0 +1,74 @@
+
+<nav class=" navbar navbar-expand bg-dark text-light">
+    <div class="container">
+        <div class="navbar-header nav-item">
+             <b>  
+          <span>Green Wash</span> </b> 
+        </div>
+        <div class="collapse navbar-collapse navbar-right justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav text-light">
+                <a style="margin-right:20px" routerLink="/home">
+                     LogOut </a>
+                <a routerLink="/package-details">
+                    Back</a>
+            </div>
+        </div>
+    </div>
+</nav> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+ <form>
+  <div #content>
+    <h2> GREEN WASH</h2>
+    <br>
+    <br>
+    
+<table #content  data-page-length='5' class="table table-striped" aria-labelledby="tabelLabel"style="width:50%">
+    <tr>
+      <th>Washing Instructions</th>
+      <td>{{orders.washingInstructions}}</td>
+       
+    </tr>
+    <tr>
+      <th>Date</th>
+      <td>{{orders.date}}</td>
+       
+    </tr>
+    <tr>
+      <th>Package Name</th>  
+      <td>{{orders.packagename}}</td>
+       
+    </tr>
+    <tr>
+        <th>Price</th>
+        <td>{{orders.price}}</td>
+         
+      </tr>
+      <tr>
+        <th>City</th>
+        <td>{{orders.city}}</td>
+         
+      </tr>
+      <tr>
+        <th>Pincode</th>  
+        <td>{{orders.pincode}}</td>
+         
+      </tr>
+  </table>
+  </div>
+  </form>
+  <button  (click)="makePDF()"   class="submit-btn">
+    <span class="button__text"  >Invoice</span>
+</button>
+<!-- <div class="ctrbutton">
+  <div class="vertical-center">
+    <button   (click)="makePDF()"  >Invoice</button>
+  </div>
+</div> -->
+ 
+ 
+ 

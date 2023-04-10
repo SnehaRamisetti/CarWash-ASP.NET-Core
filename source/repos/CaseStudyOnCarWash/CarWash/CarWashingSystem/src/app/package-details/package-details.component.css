@@ -1,4 +1,4 @@
-button {
+/* button {
     color: #4f0cad;
     margin-top: 30px;
 }
@@ -10,9 +10,9 @@ button {
 
 .loader {
     border: 16px solid #9df8f0;
-    /* Light blue */
+    
     border-top: 16px solid #3498db;
-    /* Blue */
+   
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -33,4 +33,18 @@ button {
     height: auto;
     display: inline-block;
 }
+.navbar ul li{
+    padding: 50px;
+} */
+
+table {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-width: 500px;
+  }
+  th.mat-header-cell {
+    text-align: left;
+    max-width: 300px;
+  }
 

@@ -8,7 +8,9 @@ import { CarDetailsComponent } from './car-details/car-details.component';
 import { AuthGuard } from './Guards/auth.guard';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { MyordersComponent } from './myorders/myorders.component';
 import { OrderComponent } from './order/order.component';
+import { OrderconfirmationComponent } from './orderconfirmation/orderconfirmation.component';
 import { AddpackageComponent } from './Package-Dashboard/addpackage/addpackage.component';
 import { AllpackageComponent } from './Package-Dashboard/allpackage/allpackage.component';
 import { EditpackageComponent } from './Package-Dashboard/editpackage/editpackage.component';
@@ -40,7 +42,9 @@ const routes: Routes = [
   {path:'allusers',component: AllusersComponent,canActivate:[AuthGuard]},
   {path:'edituser/:id',component: EdituserComponent,canActivate:[AuthGuard]},
   {path:'usersorders',component:  UsersordersComponent,canActivate:[AuthGuard]},
-  {path:'order/:id',component: OrderComponent,canActivate:[AuthGuard]}
+  {path:'order/:id',component: OrderComponent,canActivate:[AuthGuard]},
+  {path:'orderconfirm/:id',component: OrderconfirmationComponent,canActivate:[AuthGuard]},
+  {path:'myorder',component: MyordersComponent,canActivate:[AuthGuard]}
 ];
 
 @NgModule({

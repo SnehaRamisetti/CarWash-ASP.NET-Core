@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+ 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { AdminManagementComponent } from './admin-management/admin-management.component';
 import { TokenInterceptor } from './interceptors/token.interceptor';
+import { ToastrModule } from 'ngx-toastr';
+import{BrowserAnimationsModule} from '@angular/platform-browser/animations'
  
 import { CarDetailsComponent } from './car-details/car-details.component';
 import { PackageDetailsComponent } from './package-details/package-details.component';
@@ -24,6 +27,8 @@ import { AllusersComponent } from './User-Dashboard/allusers/allusers.component'
 import { EdituserComponent } from './User-Dashboard/edituser/edituser.component';
 import { UsersordersComponent } from './usersorders/usersorders.component';
 import { OrderComponent } from './order/order.component';
+import { MyordersComponent } from './myorders/myorders.component';
+import { OrderconfirmationComponent } from './orderconfirmation/orderconfirmation.component';
 
 
 @NgModule({
@@ -31,7 +36,7 @@ import { OrderComponent } from './order/order.component';
     AppComponent,
     SignupComponent,
     LoginComponent,
-     
+  
     PackageDetailsComponent,
     CarDetailsComponent,
     HomeComponent,
@@ -47,14 +52,19 @@ import { OrderComponent } from './order/order.component';
     AllusersComponent,
     EdituserComponent,
     UsersordersComponent,
-    OrderComponent
+    OrderComponent,
+    MyordersComponent,
+    OrderconfirmationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+
+    ToastrModule.forRoot()
   ],
   providers: [{
     provide:HTTP_INTERCEPTORS,

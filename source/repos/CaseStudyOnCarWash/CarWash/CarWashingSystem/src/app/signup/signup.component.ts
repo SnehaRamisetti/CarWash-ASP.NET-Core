@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ApiService } from '../services/api.service';
 import { AuthService } from '../services/auth.service';
 
 @Component({
@@ -16,7 +17,7 @@ export class SignupComponent {
   
  
   
- constructor(private fb:FormBuilder,private auth:AuthService,private router:Router) {
+ constructor(private fb:FormBuilder,private auth:AuthService,private api:ApiService,private router:Router) {
     
 
 }
@@ -28,7 +29,7 @@ ngOnInit():void{
    password:['',Validators.required],
    phonenumber:['',Validators.required],
    role:['',Validators.required],
-   isactive:['',Validators.required]
+   isactive:['Active',Validators.required]
   })
 }
 
@@ -44,6 +45,7 @@ onSignup(){
     .subscribe({
        next:(res)=>{alert(res.message);this.signUpForm.reset();this.router.navigate(['user-login'])},
        error:(err)=>{alert(err?.error.message)}
+       
     })
     
     console.log(this.signUpForm.value)
@@ -52,6 +54,7 @@ onSignup(){
     this.validateAllFormFileds(this.signUpForm)
     alert("Your form is invalid")
    }
+   this.api.EmailService(this.signUpForm.value.firstname,this.signUpForm.value.email).subscribe((res)=>{ })
 
   
 }

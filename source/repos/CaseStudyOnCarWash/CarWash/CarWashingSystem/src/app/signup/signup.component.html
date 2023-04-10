@@ -55,7 +55,7 @@
                                 <div class="form-group pt-3">
                                     <div class="input-field" [class.error]="signUpForm.controls['isactive'].dirty && signUpForm.hasError('required','isactive')">
                                         <span class="fa fa-user p-2"></span>
-                                        <input  formControlName="isactive" type="text" placeholder="IsActive">
+                                        <input   [disabled]="true"   formControlName="isactive" type="text" placeholder="IsActive">
                                     </div> 
                                 </div>
                                 <small *ngIf="signUpForm.controls['isactive'].dirty && signUpForm.hasError('required','isactive')" class="text-danger">*IsActive is required</small>

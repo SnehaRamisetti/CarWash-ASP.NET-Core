@@ -71,6 +71,17 @@ export class ApiService {
    addorder(orderObj:any){
     return this.http.post<any>(`${this.baseUrl}Order`,orderObj);
    }
-  
+   getorderbyId(id:number)
+  {
+    return this.http.get<any>(`${this.baseUrl}Order` + '/' +id);
+  }
+  updateorder(id:number,orderobj:any)
+  {
+    return this.http.put<any>(`${this.baseUrl}Order`+ '/' +id,orderobj);
+  }
+  EmailService(name:any,receiver:any)
+  {
+    return this.http.get<any>(`${this.baseUrl}User`+'/EmailService?name='+name+'&receiver='+receiver);
+  }
   
 }

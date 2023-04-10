@@ -1,4 +1,4 @@
-
+<!-- 
 
      <html>
     <head>
@@ -67,4 +67,54 @@
     
         
     </body>
-</html> 
+</html>  -->
+ 
+<div class="full-page">
+	<div id="login-form" class="login-page">
+		<div class="form-box">
+			 
+	<form  [formGroup]="loginForm" class="input-group-login" >
+		<span class="title">User Login</span> 
+	   <div class="login__field">
+			
+		   <div class="login__field" [class.error]="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">
+			   
+				<input class="input-field" formControlName="email" type="text" placeholder="Email" required>
+		   </div>
+	</div>
+	<small *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')" class="text-danger">
+		*Email is Required</small>
+		<div class="login__field">
+			
+		   <div class="login__field" [class.error]="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">
+			   <div >
+				<input class="input-field" formControlName="password"  [type]="type"   placeholder="Password" required>
+		   </div>
+		   </div>
+	</div>
+	<small *ngIf="loginForm.controls['role'].dirty && loginForm.hasError('required','role')" class="text-danger">
+		*Password is Required</small>
+        <div class="login__field" [class.error]="loginForm.controls['role'].dirty && loginForm.hasError('required','role')">
+            <div >
+             <input class="input-field" formControlName="role"      placeholder="Role" required>
+        </div>
+        </div>
+ 
+ <small *ngIf="loginForm.controls['role'].dirty && loginForm.hasError('required','role')" class="text-danger">
+     *Role is Required</small>
+   
+	   <button [disabled]="loginForm.invalid" (click)="onLogin()" type="submit" class="submit-btn">
+		   <span class="button__text">Login</span>
+			
+	   </button>	
+	   <div class="social-login">
+		<div class="login-signup">
+			<span class="text">Not a member?
+				<a href="signup" class="text signup-link">Signup Now</a>
+			</span>
+		</div>
+       </div>			
+   </form>
+   </div>
+
+</div>

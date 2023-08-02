@@ -1,0 +1,51 @@
+2023-08-02 09:41:46.5041 | INFO | https://localhost/Account/Profile | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-02 09:41:46.5041 | INFO | https://localhost/Account/Profile | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-02 09:41:46.6216 | INFO | https://localhost/Account/Profile | Received HTTP response after 108.2163ms - InternalServerError |  
+2023-08-02 09:41:46.6216 | INFO | https://localhost/Account/Profile | End processing HTTP request after 119.2337ms - InternalServerError |  
+2023-08-02 09:41:46.7014 | ERROR | https://localhost/Account/Profile | An unhandled exception has occurred while executing the request. | 
+ EXCEPTION OCCURRED:System.Text.Json.JsonException: 'S' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: 'S' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonConverter jsonConverter, Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadCore[TValue](JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& state, JsonConverter converterBase)
+   at System.Text.Json.JsonSerializer.ReadAsync[TValue](Stream utf8Json, Type returnType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at RestaurantReservation.Frontend.Services.AuthenticateService.RefreshToken(String accessToken, String refreshToken) in C:\Users\RADURGA\source\repos\Restaurant-Reservation-Website-master\RestaurantReservation.Frontend\RestaurantReservation.Frontend\Services\AuthenticateService.cs:line 57
+   at RestaurantReservation.Frontend.Pages.Account.ProfileModel.RefreshToken() in C:\Users\RADURGA\source\repos\Restaurant-Reservation-Website-master\RestaurantReservation.Frontend\RestaurantReservation.Frontend\Pages\Account\Profile.cshtml.cs:line 94
+   at RestaurantReservation.Frontend.Pages.Account.ProfileModel.GetUserProfile() in C:\Users\RADURGA\source\repos\Restaurant-Reservation-Website-master\RestaurantReservation.Frontend\RestaurantReservation.Frontend\Pages\Account\Profile.cshtml.cs:line 77
+   at RestaurantReservation.Frontend.Pages.Account.ProfileModel.OnGet() in C:\Users\RADURGA\source\repos\Restaurant-Reservation-Website-master\RestaurantReservation.Frontend\RestaurantReservation.Frontend\Pages\Account\Profile.cshtml.cs:line 36
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-08-02 09:50:30.0418 | DEBUG |  | init main |  
+2023-08-02 09:50:30.5740 | INFO |  | Now listening on: https://localhost:5001 |  
+2023-08-02 09:50:30.5802 | INFO |  | Application started. Press Ctrl+C to shut down. |  
+2023-08-02 09:50:30.5802 | INFO |  | Hosting environment: Production |  
+2023-08-02 09:50:30.5802 | INFO |  | Content root path: C:\Users\RADURGA\source\repos\Restaurant-Reservation-Website-master\RestaurantReservation.Frontend\RestaurantReservation.Frontend |  
+2023-08-02 09:50:53.3880 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-02 09:50:53.3980 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-02 09:50:53.7643 | INFO | https://localhost/ | Received HTTP response after 361.8497ms - OK |  
+2023-08-02 09:50:53.7643 | INFO | https://localhost/ | End processing HTTP request after 381.9043ms - OK |  

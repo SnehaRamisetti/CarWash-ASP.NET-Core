@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\RADURGA\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\RADURGA\\.nuget\\packages"
+    ]
+  }
+}

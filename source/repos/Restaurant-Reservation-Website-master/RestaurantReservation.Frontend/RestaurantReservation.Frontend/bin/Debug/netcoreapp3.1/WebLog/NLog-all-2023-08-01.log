@@ -1,0 +1,583 @@
+2023-08-01 10:26:30.5697 | INFO | https://localhost/ | Start processing HTTP request GET https://localhost:44399/api/restaurant |  
+2023-08-01 10:26:30.5697 | INFO | https://localhost/ | Sending HTTP request GET https://localhost:44399/api/restaurant |  
+2023-08-01 10:26:34.6808 | ERROR | https://localhost/ | An unhandled exception has occurred while executing the request. | 
+ EXCEPTION OCCURRED:System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at RestaurantReservation.Frontend.Services.RestaurantService.GetAll() in C:\Users\RADURGA\source\repos\Restaurant-Reservation-Website-master\RestaurantReservation.Frontend\RestaurantReservation.Frontend\Services\RestaurantService.cs:line 35
+   at RestaurantReservation.Frontend.Pages.IndexModel.GetAllRestaurants() in C:\Users\RADURGA\source\repos\Restaurant-Reservation-Website-master\RestaurantReservation.Frontend\RestaurantReservation.Frontend\Pages\Index.cshtml.cs:line 35
+   at RestaurantReservation.Frontend.Pages.IndexModel.OnGet() in C:\Users\RADURGA\source\repos\Restaurant-Reservation-Website-master\RestaurantReservation.Frontend\RestaurantReservation.Frontend\Pages\Index.cshtml.cs:line 29
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-08-01 10:26:45.5599 | INFO | https://localhost/ | Start processing HTTP request GET https://localhost:44399/api/restaurant |  
+2023-08-01 10:26:45.5631 | INFO | https://localhost/ | Sending HTTP request GET https://localhost:44399/api/restaurant |  
+2023-08-01 10:26:46.7830 | INFO | https://localhost/ | Start processing HTTP request GET https://localhost:44399/api/restaurant |  
+2023-08-01 10:26:46.7830 | INFO | https://localhost/ | Sending HTTP request GET https://localhost:44399/api/restaurant |  
+2023-08-01 10:26:49.6227 | ERROR | https://localhost/ | An unhandled exception has occurred while executing the request. | 
+ EXCEPTION OCCURRED:System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at RestaurantReservation.Frontend.Services.RestaurantService.GetAll() in C:\Users\RADURGA\source\repos\Restaurant-Reservation-Website-master\RestaurantReservation.Frontend\RestaurantReservation.Frontend\Services\RestaurantService.cs:line 35
+   at RestaurantReservation.Frontend.Pages.IndexModel.GetAllRestaurants() in C:\Users\RADURGA\source\repos\Restaurant-Reservation-Website-master\RestaurantReservation.Frontend\RestaurantReservation.Frontend\Pages\Index.cshtml.cs:line 35
+   at RestaurantReservation.Frontend.Pages.IndexModel.OnGet() in C:\Users\RADURGA\source\repos\Restaurant-Reservation-Website-master\RestaurantReservation.Frontend\RestaurantReservation.Frontend\Pages\Index.cshtml.cs:line 29
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-08-01 10:26:50.8690 | ERROR | https://localhost/ | An unhandled exception has occurred while executing the request. | 
+ EXCEPTION OCCURRED:System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it.
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at RestaurantReservation.Frontend.Services.RestaurantService.GetAll() in C:\Users\RADURGA\source\repos\Restaurant-Reservation-Website-master\RestaurantReservation.Frontend\RestaurantReservation.Frontend\Services\RestaurantService.cs:line 35
+   at RestaurantReservation.Frontend.Pages.IndexModel.GetAllRestaurants() in C:\Users\RADURGA\source\repos\Restaurant-Reservation-Website-master\RestaurantReservation.Frontend\RestaurantReservation.Frontend\Pages\Index.cshtml.cs:line 35
+   at RestaurantReservation.Frontend.Pages.IndexModel.OnGet() in C:\Users\RADURGA\source\repos\Restaurant-Reservation-Website-master\RestaurantReservation.Frontend\RestaurantReservation.Frontend\Pages\Index.cshtml.cs:line 29
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-08-01 10:43:54.5455 | DEBUG |  | init main |  
+2023-08-01 10:43:55.3492 | INFO |  | Now listening on: https://localhost:5001 |  
+2023-08-01 10:43:55.3492 | INFO |  | Application started. Press Ctrl+C to shut down. |  
+2023-08-01 10:43:55.3492 | INFO |  | Hosting environment: Production |  
+2023-08-01 10:43:55.3635 | INFO |  | Content root path: C:\Users\RADURGA\source\repos\Restaurant-Reservation-Website-master\RestaurantReservation.Frontend\RestaurantReservation.Frontend |  
+2023-08-01 10:44:01.9396 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 10:44:01.9569 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 10:44:02.2880 | INFO | https://localhost/ | Received HTTP response after 328.6323ms - OK |  
+2023-08-01 10:44:02.2880 | INFO | https://localhost/ | End processing HTTP request after 370.1058ms - OK |  
+2023-08-01 10:46:05.9681 | INFO | https://localhost/Account/Register | Start processing HTTP request POST http://localhost:5000/api/authenticate/register |  
+2023-08-01 10:46:05.9681 | INFO | https://localhost/Account/Register | Sending HTTP request POST http://localhost:5000/api/authenticate/register |  
+2023-08-01 10:46:06.1139 | INFO | https://localhost/Account/Register | Received HTTP response after 142.9945ms - OK |  
+2023-08-01 10:46:06.1139 | INFO | https://localhost/Account/Register | End processing HTTP request after 147.7289ms - OK |  
+2023-08-01 10:46:34.4419 | INFO | https://localhost/Account/Login | Start processing HTTP request POST http://localhost:5000/api/authenticate/login |  
+2023-08-01 10:46:34.4419 | INFO | https://localhost/Account/Login | Sending HTTP request POST http://localhost:5000/api/authenticate/login |  
+2023-08-01 10:46:34.5259 | INFO | https://localhost/Account/Login | Received HTTP response after 80.9626ms - OK |  
+2023-08-01 10:46:34.5281 | INFO | https://localhost/Account/Login | End processing HTTP request after 86.4361ms - OK |  
+2023-08-01 10:46:48.9184 | INFO | https://localhost/Account/Login | Start processing HTTP request POST http://localhost:5000/api/authenticate/login |  
+2023-08-01 10:46:48.9184 | INFO | https://localhost/Account/Login | Sending HTTP request POST http://localhost:5000/api/authenticate/login |  
+2023-08-01 10:46:49.2583 | INFO | https://localhost/Account/Login | Received HTTP response after 335.592ms - OK |  
+2023-08-01 10:46:49.2616 | INFO | https://localhost/Account/Login | End processing HTTP request after 343.3709ms - OK |  
+2023-08-01 10:46:49.3111 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 10:46:49.3111 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 10:46:49.3448 | INFO | https://localhost/ | Received HTTP response after 29.5739ms - OK |  
+2023-08-01 10:46:49.3448 | INFO | https://localhost/ | End processing HTTP request after 37.1395ms - OK |  
+2023-08-01 10:46:58.4877 | INFO | https://localhost/Account/Profile | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 10:46:58.4877 | INFO | https://localhost/Account/Profile | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 10:46:58.6043 | INFO | https://localhost/Account/Profile | Received HTTP response after 114.1578ms - OK |  
+2023-08-01 10:46:58.6063 | INFO | https://localhost/Account/Profile | End processing HTTP request after 118.6857ms - OK |  
+2023-08-01 10:46:58.6337 | INFO | https://localhost/Account/Profile | Start processing HTTP request GET http://localhost:5000/api/user/info/339abf29-5618-4dc1-9d13-5a9b72b71453 |  
+2023-08-01 10:46:58.6380 | INFO | https://localhost/Account/Profile | Sending HTTP request GET http://localhost:5000/api/user/info/339abf29-5618-4dc1-9d13-5a9b72b71453 |  
+2023-08-01 10:46:58.6792 | INFO | https://localhost/Account/Profile | Received HTTP response after 41.1397ms - OK |  
+2023-08-01 10:46:58.6792 | INFO | https://localhost/Account/Profile | End processing HTTP request after 48.1092ms - OK |  
+2023-08-01 10:47:00.8119 | INFO | https://localhost/Account/Profile | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 10:47:00.8119 | INFO | https://localhost/Account/Profile | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 10:47:00.9185 | INFO | https://localhost/Account/Profile | Received HTTP response after 102.3822ms - OK |  
+2023-08-01 10:47:00.9215 | INFO | https://localhost/Account/Profile | End processing HTTP request after 109.844ms - OK |  
+2023-08-01 10:47:00.9215 | INFO | https://localhost/Account/Profile | Start processing HTTP request GET http://localhost:5000/api/user/info/339abf29-5618-4dc1-9d13-5a9b72b71453 |  
+2023-08-01 10:47:00.9363 | INFO | https://localhost/Account/Profile | Sending HTTP request GET http://localhost:5000/api/user/info/339abf29-5618-4dc1-9d13-5a9b72b71453 |  
+2023-08-01 10:47:00.9565 | INFO | https://localhost/Account/Profile | Received HTTP response after 20.5741ms - OK |  
+2023-08-01 10:47:00.9565 | INFO | https://localhost/Account/Profile | End processing HTTP request after 27.6961ms - OK |  
+2023-08-01 10:47:55.3677 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 10:47:55.3677 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 10:47:55.3991 | INFO | https://localhost/ | Received HTTP response after 25.5842ms - OK |  
+2023-08-01 10:47:55.3991 | INFO | https://localhost/ | End processing HTTP request after 34.0627ms - OK |  
+2023-08-01 10:47:58.2039 | INFO | https://localhost/Members/History/List | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 10:47:58.2068 | INFO | https://localhost/Members/History/List | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 10:47:58.2897 | INFO | https://localhost/Members/History/List | Received HTTP response after 82.8935ms - OK |  
+2023-08-01 10:47:58.2897 | INFO | https://localhost/Members/History/List | End processing HTTP request after 90.1413ms - OK |  
+2023-08-01 10:47:58.3018 | INFO | https://localhost/Members/History/List | Start processing HTTP request GET http://localhost:5000/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/all |  
+2023-08-01 10:47:58.3018 | INFO | https://localhost/Members/History/List | Sending HTTP request GET http://localhost:5000/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/all |  
+2023-08-01 10:47:58.3519 | INFO | https://localhost/Members/History/List | Received HTTP response after 47.1691ms - OK |  
+2023-08-01 10:47:58.3519 | INFO | https://localhost/Members/History/List | End processing HTTP request after 52.3922ms - OK |  
+2023-08-01 11:03:20.7454 | INFO | https://localhost/Account/Profile | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:03:20.7495 | INFO | https://localhost/Account/Profile | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:03:20.8059 | INFO | https://localhost/Account/Profile | Received HTTP response after 56.3066ms - OK |  
+2023-08-01 11:03:20.8059 | INFO | https://localhost/Account/Profile | End processing HTTP request after 62.6794ms - OK |  
+2023-08-01 11:03:20.8151 | INFO | https://localhost/Account/Profile | Start processing HTTP request GET http://localhost:5000/api/user/info/339abf29-5618-4dc1-9d13-5a9b72b71453 |  
+2023-08-01 11:03:20.8151 | INFO | https://localhost/Account/Profile | Sending HTTP request GET http://localhost:5000/api/user/info/339abf29-5618-4dc1-9d13-5a9b72b71453 |  
+2023-08-01 11:03:20.8333 | INFO | https://localhost/Account/Profile | Received HTTP response after 15.2455ms - OK |  
+2023-08-01 11:03:20.8333 | INFO | https://localhost/Account/Profile | End processing HTTP request after 20.8784ms - OK |  
+2023-08-01 11:03:22.6027 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:03:22.6027 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:03:22.6555 | INFO | https://localhost/ | Received HTTP response after 49.6541ms - OK |  
+2023-08-01 11:03:22.6555 | INFO | https://localhost/ | End processing HTTP request after 55.1513ms - OK |  
+2023-08-01 11:03:43.3415 | INFO | https://localhost/Account/Profile | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:03:43.3447 | INFO | https://localhost/Account/Profile | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:03:43.3932 | INFO | https://localhost/Account/Profile | Received HTTP response after 48.2219ms - OK |  
+2023-08-01 11:03:43.3932 | INFO | https://localhost/Account/Profile | End processing HTTP request after 56.6018ms - OK |  
+2023-08-01 11:03:43.3932 | INFO | https://localhost/Account/Profile | Start processing HTTP request GET http://localhost:5000/api/user/info/339abf29-5618-4dc1-9d13-5a9b72b71453 |  
+2023-08-01 11:03:43.4059 | INFO | https://localhost/Account/Profile | Sending HTTP request GET http://localhost:5000/api/user/info/339abf29-5618-4dc1-9d13-5a9b72b71453 |  
+2023-08-01 11:03:43.4059 | INFO | https://localhost/Account/Profile | Received HTTP response after 13.7319ms - OK |  
+2023-08-01 11:03:43.4238 | INFO | https://localhost/Account/Profile | End processing HTTP request after 20.7725ms - OK |  
+2023-08-01 11:03:45.0551 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:03:45.0551 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:03:45.0788 | INFO | https://localhost/ | Received HTTP response after 20.2667ms - OK |  
+2023-08-01 11:03:45.0788 | INFO | https://localhost/ | End processing HTTP request after 26.2699ms - OK |  
+2023-08-01 11:03:46.5703 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:03:46.5703 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:03:46.5853 | INFO | https://localhost/ | Received HTTP response after 11.5746ms - OK |  
+2023-08-01 11:03:46.5853 | INFO | https://localhost/ | End processing HTTP request after 19.9449ms - OK |  
+2023-08-01 11:03:55.3261 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:03:55.3261 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:03:55.3428 | INFO | https://localhost/ | Received HTTP response after 13.4009ms - OK |  
+2023-08-01 11:03:55.3460 | INFO | https://localhost/ | End processing HTTP request after 19.9914ms - OK |  
+2023-08-01 11:05:05.8771 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:05:05.8807 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:05:05.8959 | INFO | https://localhost/ | Received HTTP response after 15.2897ms - OK |  
+2023-08-01 11:05:05.8959 | INFO | https://localhost/ | End processing HTTP request after 21.4585ms - OK |  
+2023-08-01 11:05:12.5858 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:05:12.5858 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:05:12.5988 | INFO | https://localhost/ | Received HTTP response after 10.479ms - OK |  
+2023-08-01 11:05:12.5988 | INFO | https://localhost/ | End processing HTTP request after 18.8083ms - OK |  
+2023-08-01 11:05:14.3314 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:05:14.3314 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:05:14.3488 | INFO | https://localhost/ | Received HTTP response after 13.0495ms - OK |  
+2023-08-01 11:05:14.3488 | INFO | https://localhost/ | End processing HTTP request after 19.8574ms - OK |  
+2023-08-01 11:06:34.2226 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:06:34.2226 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:06:34.2723 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 47.1421ms - OK |  
+2023-08-01 11:06:34.2723 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 52.3193ms - OK |  
+2023-08-01 11:06:34.2826 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/restaurant/3/all/all |  
+2023-08-01 11:06:34.2826 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/restaurant/3/all/all |  
+2023-08-01 11:06:34.3874 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 100.5755ms - OK |  
+2023-08-01 11:06:34.3874 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 107.1617ms - OK |  
+2023-08-01 11:06:34.4132 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:06:34.4132 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:06:34.4321 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 15.8909ms - OK |  
+2023-08-01 11:06:34.4321 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 21.1236ms - OK |  
+2023-08-01 11:06:34.4415 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/All/3 |  
+2023-08-01 11:06:34.4415 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/All/3 |  
+2023-08-01 11:06:34.4674 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 22.9088ms - OK |  
+2023-08-01 11:06:34.4674 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 28.1228ms - OK |  
+2023-08-01 11:06:41.7875 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:06:41.7875 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:06:41.8163 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 22.7977ms - OK |  
+2023-08-01 11:06:41.8163 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 31.7241ms - OK |  
+2023-08-01 11:06:41.8163 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/restaurant/3/Available/all |  
+2023-08-01 11:06:41.8163 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/restaurant/3/Available/all |  
+2023-08-01 11:06:41.8456 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 16.5208ms - OK |  
+2023-08-01 11:06:41.8456 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 22.713ms - OK |  
+2023-08-01 11:06:41.8456 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:06:41.8643 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:06:41.8904 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 25.9242ms - OK |  
+2023-08-01 11:06:41.8904 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 32.216ms - OK |  
+2023-08-01 11:06:41.8904 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/All/3 |  
+2023-08-01 11:06:41.8904 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/All/3 |  
+2023-08-01 11:06:41.9138 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 10.2464ms - OK |  
+2023-08-01 11:06:41.9138 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 16.8837ms - OK |  
+2023-08-01 11:06:47.0531 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:06:47.0531 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:06:47.0819 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 25.9382ms - OK |  
+2023-08-01 11:06:47.0819 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 31.7402ms - OK |  
+2023-08-01 11:06:47.0819 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/restaurant/3/Full/all |  
+2023-08-01 11:06:47.0819 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/restaurant/3/Full/all |  
+2023-08-01 11:06:47.1073 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 12.1283ms - OK |  
+2023-08-01 11:06:47.1073 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 20.9647ms - OK |  
+2023-08-01 11:06:47.1221 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:06:47.1266 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:06:47.1493 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 22.9044ms - OK |  
+2023-08-01 11:06:47.1493 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 29.9752ms - OK |  
+2023-08-01 11:06:47.1568 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/All/3 |  
+2023-08-01 11:06:47.1568 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/All/3 |  
+2023-08-01 11:06:47.1568 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 9.7594ms - OK |  
+2023-08-01 11:06:47.1568 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 16.1687ms - OK |  
+2023-08-01 11:06:49.8301 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:06:49.8301 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:06:49.8897 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 52.1612ms - OK |  
+2023-08-01 11:06:49.8897 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 64.1791ms - OK |  
+2023-08-01 11:06:49.8897 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/restaurant/3/all/all |  
+2023-08-01 11:06:49.8897 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/restaurant/3/all/all |  
+2023-08-01 11:06:49.9185 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 14.9878ms - OK |  
+2023-08-01 11:06:49.9185 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 20.2791ms - OK |  
+2023-08-01 11:06:49.9278 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:06:49.9278 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:06:49.9479 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 17.631ms - OK |  
+2023-08-01 11:06:49.9479 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 22.8167ms - OK |  
+2023-08-01 11:06:49.9568 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/All/3 |  
+2023-08-01 11:06:49.9568 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/All/3 |  
+2023-08-01 11:06:49.9568 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 7.2844ms - OK |  
+2023-08-01 11:06:49.9568 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 14.1483ms - OK |  
+2023-08-01 11:07:09.6029 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:07:09.6029 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:07:09.6184 | INFO | https://localhost/ | Received HTTP response after 11.7308ms - OK |  
+2023-08-01 11:07:09.6184 | INFO | https://localhost/ | End processing HTTP request after 19.3983ms - OK |  
+2023-08-01 11:07:24.8090 | INFO | https://localhost/Account/Login | Start processing HTTP request POST http://localhost:5000/api/authenticate/login |  
+2023-08-01 11:07:24.8137 | INFO | https://localhost/Account/Login | Sending HTTP request POST http://localhost:5000/api/authenticate/login |  
+2023-08-01 11:07:24.8597 | INFO | https://localhost/Account/Login | Received HTTP response after 46.0253ms - OK |  
+2023-08-01 11:07:24.8597 | INFO | https://localhost/Account/Login | End processing HTTP request after 55.0361ms - OK |  
+2023-08-01 11:07:24.8758 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:07:24.8758 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:07:24.9012 | INFO | https://localhost/ | Received HTTP response after 22.2186ms - OK |  
+2023-08-01 11:07:24.9012 | INFO | https://localhost/ | End processing HTTP request after 28.8291ms - OK |  
+2023-08-01 11:13:09.5636 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:13:09.5689 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:13:09.5970 | INFO | https://localhost/ | Received HTTP response after 27.9843ms - OK |  
+2023-08-01 11:13:09.5970 | INFO | https://localhost/ | End processing HTTP request after 37.1835ms - OK |  
+2023-08-01 11:15:38.1517 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:15:38.1517 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:15:38.1993 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 44.2881ms - OK |  
+2023-08-01 11:15:38.1993 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 50.0375ms - OK |  
+2023-08-01 11:15:38.2060 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/restaurant/5/all/all |  
+2023-08-01 11:15:38.2060 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/restaurant/5/all/all |  
+2023-08-01 11:15:38.2347 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 26.5159ms - OK |  
+2023-08-01 11:15:38.2347 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 31.0857ms - OK |  
+2023-08-01 11:15:38.2489 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:15:38.2530 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:15:38.2858 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 32.7686ms - OK |  
+2023-08-01 11:15:38.2858 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 39.3817ms - OK |  
+2023-08-01 11:15:38.2858 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/All/5 |  
+2023-08-01 11:15:38.2982 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/All/5 |  
+2023-08-01 11:15:38.3428 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 44.5903ms - OK |  
+2023-08-01 11:15:38.3428 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 51.0095ms - OK |  
+2023-08-01 11:15:46.1277 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:15:46.1314 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:15:46.1706 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 39.1974ms - OK |  
+2023-08-01 11:15:46.1706 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 45.7241ms - OK |  
+2023-08-01 11:15:46.1807 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/restaurant/5/Available/all |  
+2023-08-01 11:15:46.1807 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/restaurant/5/Available/all |  
+2023-08-01 11:15:46.2114 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 28.4697ms - OK |  
+2023-08-01 11:15:46.2114 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 35.502ms - OK |  
+2023-08-01 11:15:46.2230 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:15:46.2230 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:15:46.2439 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 18.7515ms - OK |  
+2023-08-01 11:15:46.2439 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 23.8184ms - OK |  
+2023-08-01 11:15:46.2515 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/All/5 |  
+2023-08-01 11:15:46.2515 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/All/5 |  
+2023-08-01 11:15:46.2515 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 11.2431ms - OK |  
+2023-08-01 11:15:46.2703 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 18.8198ms - OK |  
+2023-08-01 11:15:52.8012 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:15:52.8012 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:15:52.8252 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 20.9117ms - OK |  
+2023-08-01 11:15:52.8282 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 27.0341ms - OK |  
+2023-08-01 11:15:52.8282 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/restaurant/5/Full/all |  
+2023-08-01 11:15:52.8282 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/restaurant/5/Full/all |  
+2023-08-01 11:15:52.8542 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 18.677ms - OK |  
+2023-08-01 11:15:52.8542 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 26.2291ms - OK |  
+2023-08-01 11:15:52.8681 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:15:52.8681 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:15:52.8889 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 17.6098ms - OK |  
+2023-08-01 11:15:52.8889 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 24.407ms - OK |  
+2023-08-01 11:15:52.8994 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/All/5 |  
+2023-08-01 11:15:52.8994 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/All/5 |  
+2023-08-01 11:15:52.9133 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 11.7975ms - OK |  
+2023-08-01 11:15:52.9133 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 16.521ms - OK |  
+2023-08-01 11:16:09.5838 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:16:09.5838 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:16:09.6036 | INFO | https://localhost/ | Received HTTP response after 15.8783ms - OK |  
+2023-08-01 11:16:09.6104 | INFO | https://localhost/ | End processing HTTP request after 26.4467ms - OK |  
+2023-08-01 11:16:11.1267 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:16:11.1267 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:16:11.1557 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 24.6664ms - OK |  
+2023-08-01 11:16:11.1557 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 32.1681ms - OK |  
+2023-08-01 11:16:11.1648 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/restaurant/4/all/all |  
+2023-08-01 11:16:11.1648 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/restaurant/4/all/all |  
+2023-08-01 11:16:11.1832 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 16.4392ms - OK |  
+2023-08-01 11:16:11.1868 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 21.9119ms - OK |  
+2023-08-01 11:16:11.1868 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:16:11.1868 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:16:11.2178 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 18.2219ms - OK |  
+2023-08-01 11:16:11.2178 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 24.5718ms - OK |  
+2023-08-01 11:16:11.2257 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/All/4 |  
+2023-08-01 11:16:11.2257 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/All/4 |  
+2023-08-01 11:16:11.2722 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 39.4842ms - OK |  
+2023-08-01 11:16:11.2722 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 48.8897ms - OK |  
+2023-08-01 11:16:16.1969 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:16:16.1969 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:16:16.2271 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 25.4561ms - OK |  
+2023-08-01 11:16:16.2271 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 33.8422ms - OK |  
+2023-08-01 11:16:16.2391 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/restaurant/4/Available/all |  
+2023-08-01 11:16:16.2391 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/restaurant/4/Available/all |  
+2023-08-01 11:16:16.2559 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 13.9373ms - OK |  
+2023-08-01 11:16:16.2559 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 20.4974ms - OK |  
+2023-08-01 11:16:16.2701 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:16:16.2701 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:16:16.2980 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 23.4428ms - OK |  
+2023-08-01 11:16:16.2980 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 33.284ms - OK |  
+2023-08-01 11:16:16.2980 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/All/4 |  
+2023-08-01 11:16:16.3126 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/All/4 |  
+2023-08-01 11:16:16.3126 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 10.9423ms - OK |  
+2023-08-01 11:16:16.3126 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 16.128ms - OK |  
+2023-08-01 11:16:19.1710 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:16:19.1749 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:16:19.1994 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 24.5261ms - OK |  
+2023-08-01 11:16:19.1994 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 33.4297ms - OK |  
+2023-08-01 11:16:19.2102 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/restaurant/4/Full/all |  
+2023-08-01 11:16:19.2102 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/restaurant/4/Full/all |  
+2023-08-01 11:16:19.2279 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 14.0585ms - OK |  
+2023-08-01 11:16:19.2279 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 20.0025ms - OK |  
+2023-08-01 11:16:19.2422 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:16:19.2422 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:16:19.2641 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 19.3774ms - OK |  
+2023-08-01 11:16:19.2689 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 26.716ms - OK |  
+2023-08-01 11:16:19.2689 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/All/4 |  
+2023-08-01 11:16:19.2689 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/All/4 |  
+2023-08-01 11:16:19.2870 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 9.2765ms - OK |  
+2023-08-01 11:16:19.2870 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 14.745ms - OK |  
+2023-08-01 11:27:31.9353 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:27:31.9385 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:27:32.0304 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 91.8429ms - OK |  
+2023-08-01 11:27:32.0304 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 98.1535ms - OK |  
+2023-08-01 11:27:32.0396 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/restaurant/4/Full/all |  
+2023-08-01 11:27:32.0396 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/restaurant/4/Full/all |  
+2023-08-01 11:27:32.0888 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 45.4422ms - OK |  
+2023-08-01 11:27:32.0888 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 52.9564ms - OK |  
+2023-08-01 11:27:32.1040 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:27:32.1040 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:27:32.1298 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 21.1191ms - OK |  
+2023-08-01 11:27:32.1298 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 29.1649ms - OK |  
+2023-08-01 11:27:32.1298 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/All/4 |  
+2023-08-01 11:27:32.1298 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/All/4 |  
+2023-08-01 11:27:32.1514 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 11.2434ms - OK |  
+2023-08-01 11:27:32.1514 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 16.2435ms - OK |  
+2023-08-01 11:27:35.7831 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:27:35.7831 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:27:35.8149 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 29.0332ms - OK |  
+2023-08-01 11:27:35.8149 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 34.9931ms - OK |  
+2023-08-01 11:27:35.8149 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/restaurant/4/Full/all |  
+2023-08-01 11:27:35.8293 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/restaurant/4/Full/all |  
+2023-08-01 11:27:35.8293 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 14.1062ms - OK |  
+2023-08-01 11:27:35.8293 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 19.3504ms - OK |  
+2023-08-01 11:27:35.8526 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:27:35.8526 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:27:35.8987 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 40.8779ms - OK |  
+2023-08-01 11:27:35.8987 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 48.6793ms - OK |  
+2023-08-01 11:27:35.9112 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/All/4 |  
+2023-08-01 11:27:35.9112 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/All/4 |  
+2023-08-01 11:27:35.9305 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 13.568ms - OK |  
+2023-08-01 11:27:35.9305 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 21.9117ms - OK |  
+2023-08-01 11:27:46.3272 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:27:46.3272 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:27:46.3741 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 43.6338ms - OK |  
+2023-08-01 11:27:46.3741 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 49.213ms - OK |  
+2023-08-01 11:27:46.3812 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/restaurant/4/Available/all |  
+2023-08-01 11:27:46.3812 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/restaurant/4/Available/all |  
+2023-08-01 11:27:46.4156 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 30.4039ms - OK |  
+2023-08-01 11:27:46.4156 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 38.3875ms - OK |  
+2023-08-01 11:27:46.4304 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:27:46.4304 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:27:46.4535 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 21.1068ms - OK |  
+2023-08-01 11:27:46.4567 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 26.2783ms - OK |  
+2023-08-01 11:27:46.4567 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/All/4 |  
+2023-08-01 11:27:46.4567 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/All/4 |  
+2023-08-01 11:27:46.5241 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 59.5531ms - OK |  
+2023-08-01 11:27:46.5241 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 65.2379ms - OK |  
+2023-08-01 11:27:55.5791 | INFO | https://localhost/Account/Profile | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:27:55.5829 | INFO | https://localhost/Account/Profile | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:27:55.6049 | INFO | https://localhost/Account/Profile | Received HTTP response after 21.9399ms - OK |  
+2023-08-01 11:27:55.6049 | INFO | https://localhost/Account/Profile | End processing HTTP request after 28.4027ms - OK |  
+2023-08-01 11:27:55.6158 | INFO | https://localhost/Account/Profile | Start processing HTTP request GET http://localhost:5000/api/user/info/339abf29-5618-4dc1-9d13-5a9b72b71453 |  
+2023-08-01 11:27:55.6158 | INFO | https://localhost/Account/Profile | Sending HTTP request GET http://localhost:5000/api/user/info/339abf29-5618-4dc1-9d13-5a9b72b71453 |  
+2023-08-01 11:27:55.6355 | INFO | https://localhost/Account/Profile | Received HTTP response after 15.3778ms - OK |  
+2023-08-01 11:27:55.6355 | INFO | https://localhost/Account/Profile | End processing HTTP request after 22.2197ms - OK |  
+2023-08-01 11:27:58.1017 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:27:58.1017 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:27:58.1205 | INFO | https://localhost/ | Received HTTP response after 15.162ms - OK |  
+2023-08-01 11:27:58.1205 | INFO | https://localhost/ | End processing HTTP request after 22.6923ms - OK |  
+2023-08-01 11:28:09.6737 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:28:09.6778 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:28:09.6986 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 20.8915ms - OK |  
+2023-08-01 11:28:09.7047 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 30.7067ms - OK |  
+2023-08-01 11:28:09.7047 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/restaurant/5/all/all |  
+2023-08-01 11:28:09.7047 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/restaurant/5/all/all |  
+2023-08-01 11:28:09.7338 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 15.3775ms - OK |  
+2023-08-01 11:28:09.7338 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 22.6708ms - OK |  
+2023-08-01 11:28:09.7503 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:28:09.7536 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:28:09.7752 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 21.6352ms - OK |  
+2023-08-01 11:28:09.7752 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 29.5114ms - OK |  
+2023-08-01 11:28:09.7859 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/All/5 |  
+2023-08-01 11:28:09.7859 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/All/5 |  
+2023-08-01 11:28:09.8002 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 11.4858ms - OK |  
+2023-08-01 11:28:09.8002 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 16.6478ms - OK |  
+2023-08-01 11:28:52.1259 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:28:52.1305 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:28:52.1738 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 43.3534ms - OK |  
+2023-08-01 11:28:52.1738 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 50.1234ms - OK |  
+2023-08-01 11:28:52.1738 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/5 |  
+2023-08-01 11:28:52.1738 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/5 |  
+2023-08-01 11:28:52.2128 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 28.775ms - OK |  
+2023-08-01 11:28:52.2128 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 35.1457ms - OK |  
+2023-08-01 11:28:52.2247 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:28:52.2247 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:28:52.2810 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 53.0465ms - OK |  
+2023-08-01 11:28:52.2845 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 59.7787ms - OK |  
+2023-08-01 11:28:52.3046 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/booking |  
+2023-08-01 11:28:52.3046 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/booking |  
+2023-08-01 11:28:52.4168 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 107.8908ms - OK |  
+2023-08-01 11:28:52.4168 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 115.4279ms - OK |  
+2023-08-01 11:28:52.4168 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:28:52.4290 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:28:52.4482 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 19.1648ms - OK |  
+2023-08-01 11:28:52.4482 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 24.5057ms - OK |  
+2023-08-01 11:28:52.4581 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/restaurant/5/all/all |  
+2023-08-01 11:28:52.4581 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/restaurant/5/all/all |  
+2023-08-01 11:28:52.4912 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 29.5977ms - OK |  
+2023-08-01 11:28:52.4912 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 36.1678ms - OK |  
+2023-08-01 11:28:52.4912 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:28:52.5073 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:28:52.5267 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 19.4638ms - OK |  
+2023-08-01 11:28:52.5267 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 25.0166ms - OK |  
+2023-08-01 11:28:52.5267 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/All/5 |  
+2023-08-01 11:28:52.5383 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/All/5 |  
+2023-08-01 11:28:52.5494 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 11.005ms - OK |  
+2023-08-01 11:28:52.5494 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 15.5457ms - OK |  
+2023-08-01 11:29:15.1079 | INFO | https://localhost/Members/History/List | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:29:15.1119 | INFO | https://localhost/Members/History/List | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:29:15.1385 | INFO | https://localhost/Members/History/List | Received HTTP response after 26.5628ms - OK |  
+2023-08-01 11:29:15.1385 | INFO | https://localhost/Members/History/List | End processing HTTP request after 34.6314ms - OK |  
+2023-08-01 11:29:15.1472 | INFO | https://localhost/Members/History/List | Start processing HTTP request GET http://localhost:5000/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/all |  
+2023-08-01 11:29:15.1472 | INFO | https://localhost/Members/History/List | Sending HTTP request GET http://localhost:5000/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/all |  
+2023-08-01 11:29:15.2067 | INFO | https://localhost/Members/History/List | Received HTTP response after 55.5992ms - OK |  
+2023-08-01 11:29:15.2067 | INFO | https://localhost/Members/History/List | End processing HTTP request after 62.5968ms - OK |  
+2023-08-01 11:29:21.9491 | INFO | https://localhost/Members/History/List | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:29:21.9545 | INFO | https://localhost/Members/History/List | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:29:21.9798 | INFO | https://localhost/Members/History/List | Received HTTP response after 25.2865ms - OK |  
+2023-08-01 11:29:21.9798 | INFO | https://localhost/Members/History/List | End processing HTTP request after 33.7967ms - OK |  
+2023-08-01 11:29:21.9920 | INFO | https://localhost/Members/History/List | Start processing HTTP request GET http://localhost:5000/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/Pending |  
+2023-08-01 11:29:21.9920 | INFO | https://localhost/Members/History/List | Sending HTTP request GET http://localhost:5000/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/Pending |  
+2023-08-01 11:29:22.0268 | INFO | https://localhost/Members/History/List | Received HTTP response after 31.9109ms - OK |  
+2023-08-01 11:29:22.0268 | INFO | https://localhost/Members/History/List | End processing HTTP request after 37.8134ms - OK |  
+2023-08-01 11:29:23.2925 | INFO | https://localhost/Members/History/List | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:29:23.2925 | INFO | https://localhost/Members/History/List | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:29:23.3189 | INFO | https://localhost/Members/History/List | Received HTTP response after 22.9548ms - OK |  
+2023-08-01 11:29:23.3189 | INFO | https://localhost/Members/History/List | End processing HTTP request after 31.4983ms - OK |  
+2023-08-01 11:29:23.3189 | INFO | https://localhost/Members/History/List | Start processing HTTP request GET http://localhost:5000/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/Expired |  
+2023-08-01 11:29:23.3357 | INFO | https://localhost/Members/History/List | Sending HTTP request GET http://localhost:5000/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/Expired |  
+2023-08-01 11:29:23.3490 | INFO | https://localhost/Members/History/List | Received HTTP response after 13.4201ms - OK |  
+2023-08-01 11:29:23.3490 | INFO | https://localhost/Members/History/List | End processing HTTP request after 23.7167ms - OK |  
+2023-08-01 11:29:24.6604 | INFO | https://localhost/Members/History/List | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:29:24.6604 | INFO | https://localhost/Members/History/List | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:29:24.6904 | INFO | https://localhost/Members/History/List | Received HTTP response after 27.3748ms - OK |  
+2023-08-01 11:29:24.6904 | INFO | https://localhost/Members/History/List | End processing HTTP request after 32.9449ms - OK |  
+2023-08-01 11:29:24.6904 | INFO | https://localhost/Members/History/List | Start processing HTTP request GET http://localhost:5000/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/Completed |  
+2023-08-01 11:29:24.6904 | INFO | https://localhost/Members/History/List | Sending HTTP request GET http://localhost:5000/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/Completed |  
+2023-08-01 11:29:24.7163 | INFO | https://localhost/Members/History/List | Received HTTP response after 15.6189ms - OK |  
+2023-08-01 11:29:24.7163 | INFO | https://localhost/Members/History/List | End processing HTTP request after 23.5635ms - OK |  
+2023-08-01 11:29:26.0279 | INFO | https://localhost/Members/History/List | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:29:26.0279 | INFO | https://localhost/Members/History/List | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 11:29:26.0508 | INFO | https://localhost/Members/History/List | Received HTTP response after 19.6242ms - OK |  
+2023-08-01 11:29:26.0508 | INFO | https://localhost/Members/History/List | End processing HTTP request after 25.4302ms - OK |  
+2023-08-01 11:29:26.0508 | INFO | https://localhost/Members/History/List | Start processing HTTP request GET http://localhost:5000/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/Pending |  
+2023-08-01 11:29:26.0659 | INFO | https://localhost/Members/History/List | Sending HTTP request GET http://localhost:5000/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/Pending |  
+2023-08-01 11:29:26.0847 | INFO | https://localhost/Members/History/List | Received HTTP response after 18.7836ms - OK |  
+2023-08-01 11:29:26.0847 | INFO | https://localhost/Members/History/List | End processing HTTP request after 28.2444ms - OK |  
+2023-08-01 11:29:33.3782 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:29:33.3782 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:29:33.4001 | INFO | https://localhost/ | Received HTTP response after 18.8748ms - OK |  
+2023-08-01 11:29:33.4001 | INFO | https://localhost/ | End processing HTTP request after 25.493ms - OK |  
+2023-08-01 11:29:39.0486 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:29:39.0541 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 11:29:39.0541 | INFO | https://localhost/ | Received HTTP response after 7.5838ms - OK |  
+2023-08-01 11:29:39.0655 | INFO | https://localhost/ | End processing HTTP request after 16.9105ms - OK |  
+2023-08-01 17:07:31.5557 | DEBUG |  | init main |  
+2023-08-01 17:07:32.2468 | INFO |  | Now listening on: https://localhost:5001 |  
+2023-08-01 17:07:32.2468 | INFO |  | Application started. Press Ctrl+C to shut down. |  
+2023-08-01 17:07:32.2468 | INFO |  | Hosting environment: Production |  
+2023-08-01 17:07:32.2654 | INFO |  | Content root path: C:\Users\RADURGA\source\repos\Restaurant-Reservation-Website-master\RestaurantReservation.Frontend\RestaurantReservation.Frontend |  
+2023-08-01 17:07:47.9892 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 17:07:48.0002 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 17:07:48.1706 | INFO | https://localhost/ | Received HTTP response after 168.3938ms - OK |  
+2023-08-01 17:07:48.1706 | INFO | https://localhost/ | End processing HTTP request after 189.1289ms - OK |  
+2023-08-01 17:08:07.1170 | INFO | https://localhost/Account/Login | Start processing HTTP request POST http://localhost:5000/api/authenticate/login |  
+2023-08-01 17:08:07.1218 | INFO | https://localhost/Account/Login | Sending HTTP request POST http://localhost:5000/api/authenticate/login |  
+2023-08-01 17:08:07.2001 | INFO | https://localhost/Account/Login | Received HTTP response after 78.2191ms - OK |  
+2023-08-01 17:08:07.2001 | INFO | https://localhost/Account/Login | End processing HTTP request after 87.9325ms - OK |  
+2023-08-01 17:08:07.2637 | INFO | https://localhost/ | Start processing HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 17:08:07.2637 | INFO | https://localhost/ | Sending HTTP request GET http://localhost:5000/api/restaurant |  
+2023-08-01 17:08:07.2772 | INFO | https://localhost/ | Received HTTP response after 10.8682ms - OK |  
+2023-08-01 17:08:07.2772 | INFO | https://localhost/ | End processing HTTP request after 19.7515ms - OK |  
+2023-08-01 17:08:12.0741 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 17:08:12.0741 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 17:08:12.1130 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 34.8563ms - OK |  
+2023-08-01 17:08:12.1130 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 41.5787ms - OK |  
+2023-08-01 17:08:12.1466 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/restaurant/6/all/all |  
+2023-08-01 17:08:12.1466 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/restaurant/6/all/all |  
+2023-08-01 17:08:12.1820 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 32.9572ms - OK |  
+2023-08-01 17:08:12.1852 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 38.6428ms - OK |  
+2023-08-01 17:08:12.2495 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 17:08:12.2495 | INFO | https://localhost/Restaurants/Details | Sending HTTP request POST http://localhost:5000/api/authenticate/refreshToken |  
+2023-08-01 17:08:12.2746 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 21.6829ms - OK |  
+2023-08-01 17:08:12.2777 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 28.1246ms - OK |  
+2023-08-01 17:08:12.2777 | INFO | https://localhost/Restaurants/Details | Start processing HTTP request GET http://localhost:5000/api/schedule/All/6 |  
+2023-08-01 17:08:12.2777 | INFO | https://localhost/Restaurants/Details | Sending HTTP request GET http://localhost:5000/api/schedule/All/6 |  
+2023-08-01 17:08:12.3239 | INFO | https://localhost/Restaurants/Details | Received HTTP response after 31.8033ms - OK |  
+2023-08-01 17:08:12.3239 | INFO | https://localhost/Restaurants/Details | End processing HTTP request after 41.3154ms - OK |  

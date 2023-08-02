@@ -1,0 +1,125 @@
+2023-08-01 10:46:06.1054 | INFO | Authenticate - POST | http://localhost/api/authenticate/register # User teja has been created with role as Member > HTTP 200 - OK #  
+2023-08-01 10:46:34.5152 | WARN | Authenticate - POST | http://localhost/api/authenticate/login # Invalid password for user 339abf29-5618-4dc1-9d13-5a9b72b71453. #  
+2023-08-01 10:46:34.5152 | WARN | Authenticate - POST | http://localhost/api/authenticate/login # User 339abf29-5618-4dc1-9d13-5a9b72b71453 provided the wrong password > HTTP 401 - Unauthorized #  
+2023-08-01 10:46:49.2506 | INFO | Authenticate - POST | http://localhost/api/authenticate/login # User refresh token has been created > HTTP 200 - OK #  
+2023-08-01 10:46:58.5599 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 10:46:58.5930 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 10:46:58.6768 | INFO | User - GET | http://localhost/api/user/info/339abf29-5618-4dc1-9d13-5a9b72b71453 # User with ID 339abf29-5618-4dc1-9d13-5a9b72b71453 have been retrieved OK #  
+2023-08-01 10:47:00.8811 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 10:47:00.9138 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 10:47:00.9537 | INFO | User - GET | http://localhost/api/user/info/339abf29-5618-4dc1-9d13-5a9b72b71453 # User with ID 339abf29-5618-4dc1-9d13-5a9b72b71453 have been retrieved OK #  
+2023-08-01 10:47:58.2182 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 10:47:58.2867 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 10:47:58.3440 | INFO | Booking - GET | http://localhost/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/all # Member 339abf29-5618-4dc1-9d13-5a9b72b71453's Booking History have been retrieved > HTTP 200 - OK #  
+2023-08-01 11:03:20.7662 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:03:20.8024 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:03:20.8281 | INFO | User - GET | http://localhost/api/user/info/339abf29-5618-4dc1-9d13-5a9b72b71453 # User with ID 339abf29-5618-4dc1-9d13-5a9b72b71453 have been retrieved OK #  
+2023-08-01 11:03:43.3560 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:03:43.3863 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:03:43.4175 | INFO | User - GET | http://localhost/api/user/info/339abf29-5618-4dc1-9d13-5a9b72b71453 # User with ID 339abf29-5618-4dc1-9d13-5a9b72b71453 have been retrieved OK #  
+2023-08-01 11:06:34.2410 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:06:34.2696 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:06:34.4238 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:06:34.4302 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:06:34.4632 | INFO | Schedule - GET | http://localhost/api/schedule/All/3 # Restaurant schedules have been retrieved OK #  
+2023-08-01 11:06:41.8005 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:06:41.8122 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:06:41.8732 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:06:41.8857 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:06:41.9108 | INFO | Schedule - GET | http://localhost/api/schedule/All/3 # Restaurant schedules have been retrieved OK #  
+2023-08-01 11:06:47.0660 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:06:47.0660 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:06:47.1350 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:06:47.1426 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:06:47.1690 | INFO | Schedule - GET | http://localhost/api/schedule/All/3 # Restaurant schedules have been retrieved OK #  
+2023-08-01 11:06:49.8733 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:06:49.8854 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:06:49.9373 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:06:49.9461 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:06:49.9651 | INFO | Schedule - GET | http://localhost/api/schedule/All/3 # Restaurant schedules have been retrieved OK #  
+2023-08-01 11:07:24.8576 | INFO | Authenticate - POST | http://localhost/api/authenticate/login # User refresh token has been created > HTTP 200 - OK #  
+2023-08-01 11:15:38.1682 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:15:38.1951 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:15:38.2587 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:15:38.2839 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:15:38.3405 | INFO | Schedule - GET | http://localhost/api/schedule/All/5 # Restaurant schedules have been retrieved OK #  
+2023-08-01 11:15:46.1378 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:15:46.1682 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:15:46.2347 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:15:46.2414 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:15:46.2643 | INFO | Schedule - GET | http://localhost/api/schedule/All/5 # Restaurant schedules have been retrieved OK #  
+2023-08-01 11:15:52.8131 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:15:52.8131 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:15:52.8799 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:15:52.8799 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:15:52.9065 | INFO | Schedule - GET | http://localhost/api/schedule/All/5 # Restaurant schedules have been retrieved OK #  
+2023-08-01 11:16:11.1410 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:16:11.1410 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:16:11.2057 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:16:11.2057 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:16:11.2673 | INFO | Schedule - GET | http://localhost/api/schedule/All/4 # Restaurant schedules have been retrieved OK #  
+2023-08-01 11:16:16.2088 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:16:16.2088 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:16:16.2798 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:16:16.2798 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:16:16.3189 | INFO | Schedule - GET | http://localhost/api/schedule/All/4 # Restaurant schedules have been retrieved OK #  
+2023-08-01 11:16:19.1828 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:16:19.1962 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:16:19.2556 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:16:19.2556 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:16:19.2818 | INFO | Schedule - GET | http://localhost/api/schedule/All/4 # Restaurant schedules have been retrieved OK #  
+2023-08-01 11:27:31.9537 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:27:32.0279 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:27:32.1171 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:27:32.1171 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:27:32.1472 | INFO | Schedule - GET | http://localhost/api/schedule/All/4 # Restaurant schedules have been retrieved OK #  
+2023-08-01 11:27:35.7967 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:27:35.8118 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:27:35.8640 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:27:35.8967 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:27:35.9279 | INFO | Schedule - GET | http://localhost/api/schedule/All/4 # Restaurant schedules have been retrieved OK #  
+2023-08-01 11:27:46.3400 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:27:46.3688 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:27:46.4394 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:27:46.4480 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:27:46.5167 | INFO | Schedule - GET | http://localhost/api/schedule/All/4 # Restaurant schedules have been retrieved OK #  
+2023-08-01 11:27:55.5921 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:27:55.6016 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:27:55.6308 | INFO | User - GET | http://localhost/api/user/info/339abf29-5618-4dc1-9d13-5a9b72b71453 # User with ID 339abf29-5618-4dc1-9d13-5a9b72b71453 have been retrieved OK #  
+2023-08-01 11:28:09.6862 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:28:09.6958 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:28:09.7605 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:28:09.7722 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:28:09.7974 | INFO | Schedule - GET | http://localhost/api/schedule/All/5 # Restaurant schedules have been retrieved OK #  
+2023-08-01 11:28:52.1428 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:28:52.1691 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:28:52.2063 | INFO | Schedule - GET | http://localhost/api/schedule/5 # Schedule of ID 5 and relevant restaurant info have been retrieved OK #  
+2023-08-01 11:28:52.2375 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:28:52.2508 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:28:52.4120 | INFO | Booking - POST | http://localhost/api/booking # Member RestaurantReservation.Core.ViewModels.Members.MakeBookingVM new booking has been made and sent email has been created with booking ID 1 > HTTP 200 - OK #  
+2023-08-01 11:28:52.4353 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:28:52.4448 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:28:52.5130 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:28:52.5228 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:28:52.5449 | INFO | Schedule - GET | http://localhost/api/schedule/All/5 # Restaurant schedules have been retrieved OK #  
+2023-08-01 11:29:15.1225 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:29:15.1349 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:29:15.2025 | INFO | Booking - GET | http://localhost/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/all # Member 339abf29-5618-4dc1-9d13-5a9b72b71453's Booking History have been retrieved > HTTP 200 - OK #  
+2023-08-01 11:29:21.9637 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:29:21.9735 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:29:22.0241 | INFO | Booking - GET | http://localhost/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/Pending # Member 339abf29-5618-4dc1-9d13-5a9b72b71453's Booking History have been retrieved > HTTP 200 - OK #  
+2023-08-01 11:29:23.3059 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:29:23.3154 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:29:23.3464 | INFO | Booking - GET | http://localhost/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/Expired # Member 339abf29-5618-4dc1-9d13-5a9b72b71453's Booking History have been retrieved > HTTP 200 - OK #  
+2023-08-01 11:29:24.6714 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:29:24.6870 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:29:24.7136 | INFO | Booking - GET | http://localhost/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/Completed # Member 339abf29-5618-4dc1-9d13-5a9b72b71453's Booking History have been retrieved > HTTP 200 - OK #  
+2023-08-01 11:29:26.0393 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 11:29:26.0393 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 11:29:26.0808 | INFO | Booking - GET | http://localhost/api/booking/Member/339abf29-5618-4dc1-9d13-5a9b72b71453/Pending # Member 339abf29-5618-4dc1-9d13-5a9b72b71453's Booking History have been retrieved > HTTP 200 - OK #  
+2023-08-01 17:08:07.1953 | INFO | Authenticate - POST | http://localhost/api/authenticate/login # User refresh token has been created > HTTP 200 - OK #  
+2023-08-01 17:08:12.0875 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 17:08:12.1094 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 17:08:12.2610 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User found from the valid access token given > HTTP 200 - OK #  
+2023-08-01 17:08:12.2610 | INFO | Authenticate - POST | http://localhost/api/authenticate/refreshToken # User JWT Current access token has been refreshed > HTTP 200 - OK #  
+2023-08-01 17:08:12.3152 | INFO | Schedule - GET | http://localhost/api/schedule/All/6 # Restaurant schedules have been retrieved OK #  
